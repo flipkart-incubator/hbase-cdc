@@ -1,0 +1,39 @@
+{
+  "propogateMutation": true,
+  "cfConfig": {
+    "cf": {
+      "walEditOriginWhitelist": "ANY_ORIGIN",
+      "defaultTopicName": "yak_export",
+      "kafkaConfig": {
+        "bootstrap.servers": "localhost:9003",
+        "acks": "all",
+        "retries": "0",
+        "batch.size": "1000",
+        "linger.ms": "10",
+        "key.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer",
+        "value.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer"
+      },
+      "whiteListedQualifier": [
+      ],
+      "qualifierToTopicNameMap": {
+      }
+    },
+    "cc": {
+      "walEditOriginWhitelist": "ANY_ORIGIN",
+      "defaultTopicName": "yak_export_2",
+      "kafkaConfig": {
+        "bootstrap.servers": "localhost:9003",
+        "acks": "all",
+        "retries": "0",
+        "batch.size": "1000",
+        "linger.ms": "10",
+        "key.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer",
+        "value.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer"
+      },
+      "whiteListedQualifier": [
+      ],
+      "qualifierToTopicNameMap": {
+      }
+    }
+  }
+}

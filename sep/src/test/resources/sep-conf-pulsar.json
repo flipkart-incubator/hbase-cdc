@@ -1,0 +1,84 @@
+{
+  "cfConfig": {
+    "default": {
+      "endPoint": "pulsar://127.0.0.1:9999",
+      "authNEndPoint":"https://authnendpoint/api/v1/client",
+      "clientId": "clientid",
+      "clientSecret":"secret",
+      "timeOut": 10,
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    },
+    "cf": {
+      "walEditOriginWhitelist": "LOCAL_ORIGIN",
+      "endPoint": "pulsar://127.0.0.1:9999",
+      "authNEndPoint":"https://authnendpoint/api/v1/client",
+      "clientId": "clientid",
+      "clientSecret":"secret",
+      "timeOut": 10,
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    },
+    "cc": {
+      "walEditOriginWhitelist": "ANY_ORIGIN",
+      "endPoint": "pulsar://127.0.0.1:9999",
+      "authNEndPoint":"https://authnendpoint/api/v1/client",
+      "clientId": "clientid",
+      "clientSecret":"secret",
+      "timeOut": 10,
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    },
+    "cd": {
+      "walEditOriginWhitelist": "WHITELISTED_ORIGIN",
+      "endPoint": "pulsar://127.0.0.1:9999",
+      "authNEndPoint":"https://authnendpoint/api/v1/client",
+      "clientId": "clientid",
+      "clientSecret":"secret",
+      "timeOut": 10,
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    },
+    "ce": {
+      "walEditOriginWhitelist": "WHITELISTED_ORIGIN",
+      "whitelistedOrigins": ["b6a97322-e990-47f6-a4d9-b5851c99a911"],
+      "endPoint": "pulsar://127.0.0.1:9999",
+      "authNEndPoint":"https://authnendpoint/api/v1/client",
+      "clientId": "clientid",
+      "clientSecret":"secret",
+      "timeOut": 10,
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    }
+  }
+}

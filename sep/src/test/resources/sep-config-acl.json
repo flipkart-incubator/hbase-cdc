@@ -1,0 +1,26 @@
+{
+  "cfConfig": {
+    "default": {
+      "walEditOriginWhitelist": "ANY_ORIGIN",
+      "kafkaConfig": {
+        "bootstrap.servers": "localhost:9093",
+        "acks": "all",
+        "retries": "0",
+        "batch.size": "4000",
+        "linger.ms": "1000",
+        "key.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer",
+        "value.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer",
+        "sasl.mechanism": "PLAIN",
+        "security.protocol": "SASL_PLAINTEXT"
+      },
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    }
+  }
+}

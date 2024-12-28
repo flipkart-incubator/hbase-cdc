@@ -1,0 +1,104 @@
+{
+  "cfConfig": {
+    "default": {
+      "kafkaConfig": {
+        "bootstrap.servers": "127.0.0.1:9003",
+        "acks": "all",
+        "retries": "0",
+        "batch.size": "1000",
+        "linger.ms": "10",
+        "key.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer",
+        "value.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer"
+      },
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    },
+    "cf": {
+      "walEditOriginWhitelist": "LOCAL_ORIGIN",
+      "kafkaConfig": {
+        "bootstrap.servers": "127.0.0.1:9003",
+        "acks": "all",
+        "retries": "0",
+        "batch.size": "1000",
+        "linger.ms": "10",
+        "key.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer",
+        "value.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer"
+      },
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    },
+    "cc": {
+      "walEditOriginWhitelist": "ANY_ORIGIN",
+      "kafkaConfig": {
+        "bootstrap.servers": "127.0.0.1:9003",
+        "acks": "all",
+        "retries": "0",
+        "batch.size": "1000",
+        "linger.ms": "10",
+        "key.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer",
+        "value.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer"
+      },
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    },
+    "cd": {
+      "walEditOriginWhitelist": "WHITELISTED_ORIGIN",
+      "kafkaConfig": {
+        "bootstrap.servers": "127.0.0.1:9003",
+        "acks": "all",
+        "retries": "0",
+        "batch.size": "1000",
+        "linger.ms": "10",
+        "key.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer",
+        "value.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer"
+      },
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    },
+    "ce": {
+      "walEditOriginWhitelist": "WHITELISTED_ORIGIN",
+      "whitelistedOrigins": ["b6a97322-e990-47f6-a4d9-b5851c99a922"],
+      "kafkaConfig": {
+        "bootstrap.servers": "127.0.0.1:9003",
+        "acks": "all",
+        "retries": "0",
+        "batch.size": "1000",
+        "linger.ms": "10",
+        "key.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer",
+        "value.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer"
+      },
+      "whiteListedQualifier": [
+        "data",
+        "events"
+      ],
+      "qualifierToTopicNameMap": {
+        "data": "yak_export",
+        "events": "yak_export"
+      }
+    }
+  }
+}

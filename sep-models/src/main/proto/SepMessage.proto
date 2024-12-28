@@ -1,0 +1,53 @@
+option java_package = "com.flipkart.yak.sep.proto";
+option java_outer_classname = "SepMessageProto";
+option java_generate_equals_and_hash = true;
+option optimize_for = SPEED;
+
+
+/**
+ * Table Name
+ */
+message SepTableName {
+  required bytes namespace = 1;
+  required bytes qualifier = 2;
+}
+
+/**
+ * SepMessage
+ */
+message SepMessage {
+  required bytes row = 1;
+  required uint64 timestamp = 2;
+  required bytes value = 3;
+  required SepTableName table = 4;
+  optional bytes columnfamily = 5;
+  optional bytes qualifier = 6;
+}
+
+/**
+ * SepMessage version 2
+ */
+message SepMessageV2
+{
+  required SepTableName table = 1;
+  repeated SepCell sep_cell = 2;
+  optional uint64 orig_sequence_id = 3;
+  optional uint64 orig_log_seq_num = 4;
+  optional uint64 timestamp = 5;
+}
+
+/**
+ * SepCell
+ */
+
+message SepCell {
+  required bytes row = 1;
+  required uint64 timestamp = 2;
+  optional bytes  value = 3;
+  optional bytes columnfamily = 4;
+  optional bytes qualifier = 5;
+  optional string type = 6;
+}
+
+
+
